@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Seat Booking</string>
+    <string name="book_tickets">BOOK TICKETS</string>
+    <string name="book_more">Book More</string>
+    <string name="total_price">Charges</string>
+    <string name="price_format">%1$s INR</string>
+    <string name="section_info">%1$s : Rs. %2$s</string>
+    <string name="failed_to_load">Failed to load theatre layout!</string>
+    <string name="retry">Retry</string>
+    <string name="thank_you">Thank you for booking with us.</string>
+    <string name="screen_side_desc">Screen location identifier</string>
+    <string name="screen_this_side">Screen This side</string>
+    <string name="loading">Loading...</string>
+</resources>
