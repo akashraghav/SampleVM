@@ -1,6 +1,6 @@
 package com.raghav.vmware.data.remote.api
 
-import com.raghav.vmware.data.modeldto.TheatreInfoDto
+import com.raghav.vmware.data.dto.TheatreInfoDto
 import retrofit2.Response
 import retrofit2.http.*
 

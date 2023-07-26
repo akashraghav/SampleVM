@@ -1,10 +1,10 @@
-package com.raghav.vmware.data.modeldto
+package com.raghav.vmware.data.dto
 
 
 import com.google.gson.annotations.SerializedName
 import com.raghav.vmware.domain.model.Section
-import com.raghav.vmware.domain.model.Price
 import com.raghav.vmware.domain.model.TheatreInfo
+import java.math.BigDecimal
 
 data class TheatreInfoDto(
     @SerializedName("theatreName")
@@ -28,7 +28,7 @@ data class LayoutDto(
     val rows: List<List<Int>>
 ) {
     fun toTheatreLayout() : Section {
-        return Section(name, price.toPrice(), rows)
+        return Section(name, BigDecimal("${price.abs}.${price.dec}"), rows)
     }
 }
 
@@ -37,8 +37,4 @@ data class PriceDto(
     val abs: Int,
     @SerializedName("dec")
     val dec: Int
-) {
-    fun toPrice() : Price {
-        return Price(abs, dec)
-    }
-}
+)

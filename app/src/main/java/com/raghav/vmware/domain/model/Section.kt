@@ -1,13 +1,10 @@
 package com.raghav.vmware.domain.model
 
 
-import com.google.gson.annotations.SerializedName
+import java.math.BigDecimal
 
 data class Section(
-    @SerializedName("name")
     val name: String,
-    @SerializedName("price")
-    val price: Price,
-    @SerializedName("rows")
+    val price: BigDecimal,
     val rows: List<List<Int>>
 )

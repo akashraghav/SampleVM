@@ -89,7 +89,7 @@ class TheatreLayoutFragment : Fragment() {
             val sectionDivider = layoutInflater.inflate(R.layout.section_divider_view, binding?.seatLayout, false)
             val divider = sectionDivider.findViewById<TextView>(R.id.dividerText)
             divider.text = String.formatResource(requireContext(), R.string.section_info,
-                sectionStructure.name, sectionStructure.price.value().toString())
+                sectionStructure.name, sectionStructure.price.toPrecision(2).toString())
             binding?.seatLayout?.addView(sectionDivider)
         }
         val imageView = layoutInflater.inflate(R.layout.screen_this_side_view, binding?.seatLayout, false)

@@ -24,7 +24,7 @@ class SeatSelectionUseCase @Inject constructor(
             theatreInfo.sections.firstOrNull { layout ->
                 seat.section == layout.name
             }?.let {
-                total = total.add(it.price.value())
+                total = total.add(it.price)
             }
         }
         return total
